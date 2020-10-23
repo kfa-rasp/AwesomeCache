@@ -7,10 +7,11 @@ Pod::Spec.new do |s|
   s.license               = { :type => "MIT", :file => "LICENSE" }
   s.author                = { "Alexander Schuch" => "alexander@schuch.me" }
   s.social_media_url      = "http://twitter.com/schuchalexander"
-  s.ios.deployment_target = "8.0"
+  s.ios.deployment_target = "10.0"
   s.tvos.deployment_target= "9.0"
   s.watchos.deployment_target= "3.0"
   s.source                = { :git => "https://github.com/aschuch/AwesomeCache.git", :tag => s.version }
   s.requires_arc          = true
+  s.swift_version         = "5.0"
   s.source_files          = "AwesomeCache/Cache.swift", "AwesomeCache/CacheObject.swift", "AwesomeCache/NSKeyedUnarchiverWrapper.{h,m}"
 end
